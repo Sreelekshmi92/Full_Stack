@@ -1,0 +1,17 @@
+.myMainbody{
+    background:wheat;
+}
+.myMaintable{
+    background:cornflowerblue;
+    border:2px solid black;
+}
+
+.myButton{
+    background: yellowgreen;
+}
+.mySubbody{
+    background: cornflowerblue;
+}
+.mysubtable{
+    background: cornsilk;
+}
