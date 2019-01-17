@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./grid.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="./register.html">Register</a>
+                          </li> 
+                          <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Login</a>
+                              </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contactfrm.html">Contact Us</a>
+                    </li>                                     
+                  </ul>                
+                </div>
+              </nav>
+
+   <div class="container">
+       <div class="row">
+           <div class="col-sm-12 col-lg-6">
+               My Login Page
+               <table class="table table-borderless">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Roll No</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>
+                        <select>
+                            <option value="LKG">LKG</option>
+                            <option value="UKG">UKG</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-success">Submit</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="myButton"><a href="./register.html">Go To Register Page</a></td>
+                </tr>
+            </table>
+           </div>
+           <div class="col-sm-12 col-lg-6">
+               My Registration Page
+               <table class="table table-hover table-borderless">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Mob</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Dob</td>
+                    <td><input type="date"/></td>
+                </tr>
+                <tr>
+                    <td>Place</td>
+                    <td>
+                        <select>
+                            <option value="tcr">Thrissur</option>
+                            <option value="ekm">Ernakulam</option>
+                            <option value="tvm">Trivandrum</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password"/></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-warning">Register</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <a href="./index.html">Go To Login Page</a>
+                    </td>
+                </tr>
+            </table>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-sm-4">
+                <div class="card border-primary mb-3" style="width: 18rem;">
+                        <img class="card-img-top" src="./images.png" alt="Card image cap">                        
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+           </div>
+           <div class="col-sm-4">
+                <div class="card border-primary mb-3" style="width: 18rem;height: 19rem">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+           </div>
+           <div class="col-sm-4">
+                <div class="card border-primary mb-3">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
