@@ -17,5 +17,6 @@ console.log(p);
 {
     let n=5; //local access
     n=n+5;
-console.log(n);
+    console.log(n);
+   
 }
