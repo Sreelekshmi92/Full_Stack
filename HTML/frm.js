@@ -1,5 +1,6 @@
 function Readme()
 {
+   
     var getName=document.getElementById('name').value;
     var getRollno=document.getElementById('roll_no').value;
     var getClass=document.getElementById('cls').value;
