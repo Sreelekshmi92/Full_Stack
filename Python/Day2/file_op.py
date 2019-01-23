@@ -1,0 +1,5 @@
+fileobj=open("login.txt","w")
+fileobj.write("ictak\n")
+fileobj.close()
+fileobj=open("login.txt","a")
+fileobj.write("1234")

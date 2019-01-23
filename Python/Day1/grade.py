@@ -3,7 +3,7 @@ def calc(m1,m2,m3,m4,m5):
     avg=(m1+m2+m3+m4)/5
     print(avg)
     if avg >=90 and avg<=100:
-        print("A+")
+        print("Grade is A+")
     elif avg>=80 and avg<90:
         print("A")
     elif avg>=70 and avg<80:
