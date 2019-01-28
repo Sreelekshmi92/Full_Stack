@@ -1,0 +1,55 @@
+{% extends "layout1.html" %}
+{%block content%}
+<div class="register">
+    <table class="table table-hover table-borderless">
+        <tr>
+            <td>Name</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Mob</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Dob</td>
+            <td><input type="date"/></td>
+        </tr>
+        <tr>
+            <td>Place</td>
+            <td>
+                <select>
+                    <option value="tcr">Thrissur</option>
+                    <option value="ekm">Ernakulam</option>
+                    <option value="tvm">Trivandrum</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="btn btn-warning">Register</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <a href="./index.html">Go To Login Page</a>
+            </td>
+        </tr>
+    </table>
+    </div>
+    {%endblock%}
