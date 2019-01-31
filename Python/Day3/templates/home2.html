@@ -1,0 +1,127 @@
+{% extends "layout1.html" %}
+{%block content%}
+<div class="home">
+<div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                My Login Page
+                <table class="table table-borderless">
+                 <tr>
+                     <td>Name</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Roll No</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Class</td>
+                     <td>
+                         <select>
+                             <option value="LKG">LKG</option>
+                             <option value="UKG">UKG</option>
+                         </select>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td><button class="btn btn-success">Submit</button></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td class="myButton"><a href="./register.html">Go To Register Page</a></td>
+                 </tr>
+             </table>
+            </div>
+            <div class="col-sm-6">
+                My Registration Page
+                <table class="table table-hover table-borderless">
+                 <tr>
+                     <td>Name</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Email</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Mob</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Dob</td>
+                     <td><input type="date"/></td>
+                 </tr>
+                 <tr>
+                     <td>Place</td>
+                     <td>
+                         <select>
+                             <option value="tcr">Thrissur</option>
+                             <option value="ekm">Ernakulam</option>
+                             <option value="tvm">Trivandrum</option>
+                         </select>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>Username</td>
+                     <td><input type="text"/></td>
+                 </tr>
+                 <tr>
+                     <td>Password</td>
+                     <td><input type="password"/></td>
+                 </tr>
+                 <tr>
+                     <td>Confirm Password</td>
+                     <td><input type="password"/></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td><button class="btn btn-warning">Register</button></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td>
+                         <a href="./index.html">Go To Login Page</a>
+                     </td>
+                 </tr>
+             </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                 <div class="card border-primary mb-3" style="width: 18rem;">
+                         <img class="card-img-top" src="./images.png" alt="Card image cap">                        
+                         <div class="card-body">
+                           <h5 class="card-title">Card title</h5>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                       </div>
+            </div>
+            <div class="col-sm-4">
+                 <div class="card border-primary mb-3" style="width: 18rem;height: 19rem">
+                         <div class="card-body">
+                           <h5 class="card-title">Card title</h5>
+                           <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           <a href="#" class="card-link">Card link</a>
+                           <a href="#" class="card-link">Another link</a>
+                         </div>
+                       </div>
+            </div>
+            <div class="col-sm-4">
+                 <div class="card border-primary mb-3">
+                         <div class="card-header">
+                           Featured
+                         </div>
+                         <div class="card-body">
+                           <h5 class="card-title">Special title treatment</h5>
+                           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                           <a href="#" class="btn btn-primary">Go somewhere</a>
+                         </div>
+                       </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {%endblock%}
