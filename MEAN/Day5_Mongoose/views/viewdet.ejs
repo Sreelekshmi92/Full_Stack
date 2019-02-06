@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <h1>View Book Details</h1> <br><br>
+    <table class="table">
+        <tr>
+            <th>Book id</th>
+            <th>Book name</th>
+            <th>Author</th>
+        </tr>
+        <% for(var i=0;i<data.length;i++){ %>
+        <tr>
+            <td><%= data[i].bookid %></td>
+            <td><%= data[i].bname %></td>
+            <td><%= data[i].author %></td>
+        </tr>
+        <% }%>
+    </table>
+</body>
+</html>

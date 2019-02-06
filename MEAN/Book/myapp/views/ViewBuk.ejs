@@ -10,19 +10,32 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
+<body><br>
     <div class="container">
+        <form action="/addbuk" method="get">
+        <h1 class="text-center">Book Details</h1><br><br>
+        <button type="submit" class="btn btn-success" style="margin-left: 90%">Add Book</button><br><br>
         <table class="table">
             <tr>
-                <th>Bukimage</th>
+                <th>Cover Image</th>
+                <th>Id</th>
                 <th>Name</th>
+                <th>Author</th>
+                <th>Price</th>
             </tr>
+            <% for(var i=0;i<data.length;i++)
+            {
+             %>
             <tr>
-                <td><img src="../public/images/book1.jpg" class="img-rounded" alt="book1" style="width:6%;"></td>  
-                <td>aa</td>            
+                <td style="width: 100px"><img src="../public/images/book1.jpg" class="img-responsive img-responsive-2" alt="book1" style="width: 50px"></td>   
+                <td><%= data[i].Bukid%></td>    
+                <td><%= data[i].Bukname%></td>  
+                <td><%= data[i].Author%></td>  
+                <td><%= data[i].Price%></td>          
             </tr>
-            
+            <% }%>
         </table>
+    </form>
     </div>
 </body>
 </html>
