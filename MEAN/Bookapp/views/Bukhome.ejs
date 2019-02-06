@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <br>
+   <h1>View Book Details</h1>
+   <table>
+       <tr>
+           <th>Image</th>
+           <th>Bukid</th>
+           <th>Book Name</th>
+           <th>Author</th>
+       </tr>
+       <% for(var i=0;i<data.length;i++) { %>
+           <tr>
+                <td style="width: 100px"><img src="../public/images/<%= data[i].image %>" class="img-responsive img-responsive-2" alt="book1" style="width: 80px"></td>
+                <td><%= data[i].bookid %></td>
+                <td><%= data[i].bname %></td>
+                <td><%= data[i].author %></td>
+           </tr>
+       <% } %>
+   </table>
+</body>
+</html>

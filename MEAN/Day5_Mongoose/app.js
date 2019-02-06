@@ -2,7 +2,10 @@ var express=require('express')
 const app=express();
 var bodyparser=require('body-parser')
 app.use(bodyparser.urlencoded({extended:true}))
-app.set("view engine","ejs")
+app.set("view engine","ejs");
+
+const fileupload=require('express-fileupload');
+app.use(fileupload());
 
 var mongoose=require('mongoose')
 
@@ -14,7 +17,7 @@ mongoose.connect(db,function(err){  //opening conection to database
 var book=require("./model/Book.js")
 
 app.get("/",function(req,res){
-    res.render("home")
+    res.render("login")
 })
 
 app.post("/insert",function(req,res){
@@ -62,6 +65,20 @@ app.post("/update",function(req,res){
     })
 })
 
+app.post("/upload",function(req,res){
+    let samplefile=req.files.samplefile;
+    samplefile.mv(__dirname+"/images/"+samplefile.name,function(err){
+        if(err){res.send(err)}
+        else{
+            res.send("Uploaded");
+        }
+    })
+})
+
+app.post("/login",function(req,res){
+    var name=req.body.txtname;
+    res.render("userhome",{data:name})
+})
 
 app.listen(8000,function(req,res){
     console.log("Server started listening")

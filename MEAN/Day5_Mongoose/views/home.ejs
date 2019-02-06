@@ -31,7 +31,7 @@
     </form><br><br>
 
     <form action="/delete" method="post">
-       Book id <input type="text" name="bid"> <br><br>
+       Book id <input type="text" name="bid"> 
         <button type="submit">Delete</button>
     </form><br><br>
 
@@ -57,8 +57,14 @@
     </form><br><br>
 
     <form action="/view" method="post">
-        Book id <input type="text" name="bid"> <br><br>
+        Book id <input type="text" name="bid"> 
          <button type="submit">View</button>
+    </form><br><br>
+
+    <form action="/upload" method="post" encType="multipart/form-data">
+        <input type="file" name="samplefile">
+        <button type="submit">Upload</button>
     </form>
+
 </body>
 </html>
