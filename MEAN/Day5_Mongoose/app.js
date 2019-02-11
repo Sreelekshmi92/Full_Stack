@@ -17,7 +17,7 @@ mongoose.connect(db,function(err){  //opening conection to database
 var book=require("./model/Book.js")
 
 app.get("/",function(req,res){
-    res.render("login")
+    res.render("home")
 })
 
 app.post("/insert",function(req,res){
